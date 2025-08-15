@@ -26,7 +26,7 @@ variable "vpc_cidr" {
 variable "key_name" {
   description = "EC2 key pair name created in AWS for SSH access"
   type        = string
- 
+  default     = "ec2-keypair" # CHANGE_ME: set your key pair name
 }
 
 variable "instance_type" {
